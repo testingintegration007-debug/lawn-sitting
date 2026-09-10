@@ -95,7 +95,7 @@ function LawnSittingLanding() {
               Reviews
             </a>
             <a href="#book" className="transition-colors hover:text-foreground">
-              Book
+              Book a call
             </a>
           </nav>
           <a
