@@ -74,33 +74,33 @@ function LawnSittingLanding() {
   return (
     <div className="min-h-screen bg-background font-body text-foreground">
       {/* Header */}
-      <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-nav-border bg-nav-background/95 text-nav-foreground backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <Link to="/" className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-nav-accent text-nav-background">
               <TreePine className="h-5 w-5" />
             </span>
             <span className="font-display text-lg font-bold tracking-tight">
-              GreenGuard<span className="text-primary">Lawn</span>
+              GreenGuard<span className="text-nav-accent">Lawn</span>
             </span>
           </Link>
-          <nav className="hidden items-center gap-6 text-sm font-medium text-muted-foreground md:flex">
-            <a href="#services" className="transition-colors hover:text-foreground">
+          <nav className="hidden items-center gap-6 text-sm font-medium text-nav-muted md:flex">
+            <a href="#services" className="transition-colors hover:text-nav-foreground">
               Services
             </a>
-            <a href="#how" className="transition-colors hover:text-foreground">
+            <a href="#how" className="transition-colors hover:text-nav-foreground">
               How It Works
             </a>
-            <a href="#reviews" className="transition-colors hover:text-foreground">
+            <a href="#reviews" className="transition-colors hover:text-nav-foreground">
               Reviews
             </a>
-            <a href="#book" className="transition-colors hover:text-foreground">
+            <a href="#book" className="transition-colors hover:text-nav-foreground">
               Book a call
             </a>
           </nav>
           <a
             href="#book"
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+            className="inline-flex items-center gap-2 rounded-lg bg-nav-accent px-4 py-2 text-sm font-semibold text-nav-background shadow-sm transition-opacity hover:opacity-90"
           >
             <Clock className="h-4 w-4" />
             Book a Visit
