@@ -1,24 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
+import LawnSittingLanding from "../components/LawnSittingLanding";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      {
+        title: "GreenGuard Lawn Sitting — Trusted Care for Your Lawn",
+      },
+      {
+        name: "description",
+        content:
+          "GreenGuard connects homeowners with vetted, insured lawn sitters. Book mowing, watering, and full lawn care on your schedule with a satisfaction guarantee.",
+      },
+      { property: "og:title", content: "GreenGuard Lawn Sitting — Trusted Care for Your Lawn" },
+      {
+        property: "og:description",
+        content:
+          "Vetted, insured lawn sitters for mowing, watering, and full lawn care. Book in minutes with a satisfaction guarantee.",
+      },
+      { property: "og:type", content: "website" },
+      {
+        property: "og:image",
+        content:
+          "https://staging.vibe.filesafe.space/1789021417416017000/assets/9362c83f-c5b0-45f3-805a-96b08735f6d0.png",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content:
+          "https://staging.vibe.filesafe.space/1789021417416017000/assets/9362c83f-c5b0-45f3-805a-96b08735f6d0.png",
+      },
+    ],
+  }),
+  component: LawnSittingLanding,
 });
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-vibe-blank-page-placeholder="REMOVE_THIS"
-        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSIyNCIgZmlsbD0iI2YxZWZlNyIvPjxwYXRoIGQ9Ik0xMDAgNjR2NzJNNjQgMTAwaDcyIiBzdHJva2U9IiNjOWM0YjUiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
