@@ -9,7 +9,7 @@ const crewImg =
 const services = [
   {
     icon: TreePine,
-    title: "Commit pull 1 Test",
+    title: "I hope this works",
     desc: "Scheduled cuts that keep your lawn at the right height for healthy growth.",
   },
   {
