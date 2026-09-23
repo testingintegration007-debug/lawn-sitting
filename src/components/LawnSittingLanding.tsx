@@ -14,7 +14,7 @@ const services = [
   },
   {
     icon: Sprout,
-    title: "Watering & Feeding",
+    title: "Commit pull 2 Test",
     desc: "Seasonal fertilization and watering plans so your yard never goes thirsty.",
   },
   {
