@@ -19,7 +19,7 @@ const services = [
   },
   {
     icon: ClipboardCheck,
-    title: "Yard Cleanups pull 3 tst",
+    title: "This as well",
     desc: "Leaf removal, brush clearing, and storm debris hauled away — no trace left.",
   },
   {
