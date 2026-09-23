@@ -89,7 +89,7 @@ function LawnSittingLanding() {
               Services manual push
             </a>
             <a href="#how" className="transition-colors hover:text-nav-foreground">
-              How It Works - Auto
+              How It Works - manul
             </a>
             <a href="#reviews" className="transition-colors hover:text-nav-foreground">
               Reviews
