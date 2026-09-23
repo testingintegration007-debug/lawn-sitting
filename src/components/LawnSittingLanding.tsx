@@ -86,7 +86,7 @@ function LawnSittingLanding() {
           </Link>
           <nav className="hidden items-center gap-6 text-sm font-medium text-nav-muted md:flex">
             <a href="#services" className="transition-colors hover:text-nav-foreground">
-              Services
+              Services manual push
             </a>
             <a href="#how" className="transition-colors hover:text-nav-foreground">
               How It Works
