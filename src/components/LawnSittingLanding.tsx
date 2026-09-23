@@ -9,7 +9,7 @@ const crewImg =
 const services = [
   {
     icon: TreePine,
-    title: "Mowing & Edging - Manual Pull Attempt 2",
+    title: "Mowing & Edging - Manual Pull Attempt 3",
     desc: "Scheduled cuts that keep your lawn at the right height for healthy growth.",
   },
   {
