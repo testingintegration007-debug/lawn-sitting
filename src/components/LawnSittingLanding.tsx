@@ -9,7 +9,7 @@ const crewImg =
 const services = [
   {
     icon: TreePine,
-    title: "Mowing & mm - conflict push",
+    title: "Mowing & Edging - conflict nn",
     desc: "Scheduled cuts that keep your lawn at the right height for healthy growth.",
   },
   {
