@@ -31,7 +31,7 @@ const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#process", label: "Processing" },
   { href: "#about", label: "About" },
-  { href: "#reviews", label: "Reviews" },
+  { href: "#reviews", label: "Reviews Pull" },
   { href: "#contact", label: "Contact" },
 ];
 
