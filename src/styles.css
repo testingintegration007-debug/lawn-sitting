@@ -20,6 +20,11 @@
   --radius-4xl: calc(var(--radius) + 16px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-nav-background: var(--nav-background);
+  --color-nav-foreground: var(--nav-foreground);
+  --color-nav-muted: var(--nav-muted);
+  --color-nav-border: var(--nav-border);
+  --color-nav-hover: var(--nav-hover);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -57,6 +62,13 @@
 
 :root {
   --radius: 0.75rem;
+
+  /* Light, warm nav surface against the dark page canvas */
+  --nav-background: oklch(0.96 0.018 105);
+  --nav-foreground: oklch(0.24 0.035 155);
+  --nav-muted: oklch(0.43 0.03 155);
+  --nav-border: oklch(0.86 0.025 130);
+  --nav-hover: oklch(0.91 0.035 130);
 
   /* Near-black slate canvas */
   --background: oklch(0.14 0.01 260);

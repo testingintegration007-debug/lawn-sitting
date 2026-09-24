@@ -31,7 +31,7 @@ const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#process", label: "Processing" },
   { href: "#about", label: "About" },
-  { href: "#reviews", label: "Reviews Pull" },
+  { href: "#reviews", label: "Reviews" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -120,7 +120,7 @@ function LawnSittingLanding() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* ── Header ── */}
-      <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-nav-border bg-nav-background/95 text-nav-foreground backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
           <Link to="/" className="flex items-center gap-2.5">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
@@ -136,7 +136,7 @@ function LawnSittingLanding() {
               <a
                 key={l.href}
                 href={l.href}
-                className="rounded-lg px-3.5 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="rounded-lg px-3.5 py-2 text-sm font-medium text-nav-muted transition-colors hover:text-nav-foreground"
               >
                 {l.label}
               </a>
@@ -146,14 +146,14 @@ function LawnSittingLanding() {
           <div className="flex items-center gap-3">
             <a
               href="tel:5550142270"
-              className="hidden items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground md:inline-flex"
+              className="hidden items-center gap-2 text-sm font-medium text-nav-muted transition-colors hover:text-nav-foreground md:inline-flex"
             >
               <Phone className="h-4 w-4" />
               (555) 014-2270
             </a>
             <a
               href="#contact"
-              className="hidden items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-secondary lg:inline-flex"
+              className="hidden items-center gap-2 rounded-lg border border-nav-border px-4 py-2 text-sm font-semibold text-nav-foreground transition-colors hover:bg-nav-hover lg:inline-flex"
             >
               Book a call
             </a>
@@ -167,7 +167,7 @@ function LawnSittingLanding() {
               type="button"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               onClick={() => setMobileOpen((v) => !v)}
-              className="inline-flex size-9 items-center justify-center rounded-lg border border-border text-foreground lg:hidden"
+              className="inline-flex size-9 items-center justify-center rounded-lg border border-nav-border text-nav-foreground lg:hidden"
             >
               {mobileOpen ? <X className="size-4.5" /> : <Menu className="size-4.5" />}
             </button>
@@ -175,14 +175,14 @@ function LawnSittingLanding() {
         </div>
 
         {mobileOpen && (
-          <div className="border-t border-border bg-background px-5 pb-5 pt-2 lg:hidden">
+          <div className="border-t border-nav-border bg-nav-background px-5 pb-5 pt-2 lg:hidden">
             <nav className="flex flex-col">
               {navLinks.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
                   onClick={() => setMobileOpen(false)}
-                  className="border-b border-border/50 py-3 text-base font-medium"
+                  className="border-b border-nav-border py-3 text-base font-medium text-nav-foreground"
                 >
                   {l.label}
                 </a>
@@ -191,7 +191,7 @@ function LawnSittingLanding() {
                 <a
                   href="#contact"
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center rounded-lg border border-border py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
+                  className="flex items-center justify-center rounded-lg border border-nav-border py-2.5 text-sm font-semibold text-nav-foreground transition-colors hover:bg-nav-hover"
                 >
                   Book a call
                 </a>
