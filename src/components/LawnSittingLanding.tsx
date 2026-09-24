@@ -30,7 +30,7 @@ const aerialImg =
 const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#process", label: "Processing" },
-  { href: "#about", label: "About" },
+  { href: "#about", label: "About Pull" },
   { href: "#reviews", label: "Reviews" },
   { href: "#contact", label: "Contact" },
 ];
