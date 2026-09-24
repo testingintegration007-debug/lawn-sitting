@@ -28,7 +28,7 @@ const aerialImg =
   "https://staging.vibe.filesafe.space/1789021417416017000/assets/5eb92b36-eea8-41dd-9024-04ad351736d2.jpg";
 
 const navLinks = [
-  { href: "#services", label: "Services Pull and Code edit" },
+  { href: "#services", label: "Services Pull and Code edit push" },
   { href: "#process", label: "Processing" },
   { href: "#about", label: "About" },
   { href: "#reviews", label: "Reviews" },
