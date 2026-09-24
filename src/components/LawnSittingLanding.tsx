@@ -30,7 +30,7 @@ const aerialImg =
 const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#process", label: "Processing" },
-  { href: "#about", label: "About Pull" },
+  { href: "#about", label: "About" },
   { href: "#reviews", label: "Reviews" },
   { href: "#contact", label: "Contact" },
 ];
@@ -153,6 +153,12 @@ function LawnSittingLanding() {
             </a>
             <a
               href="#contact"
+              className="hidden items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-secondary lg:inline-flex"
+            >
+              Book a call
+            </a>
+            <a
+              href="#contact"
               className="hidden items-center gap-2 rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 sm:inline-flex"
             >
               Free Quote
@@ -181,6 +187,22 @@ function LawnSittingLanding() {
                   {l.label}
                 </a>
               ))}
+              <div className="mt-4 flex flex-col gap-2.5 pt-2">
+                <a
+                  href="#contact"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center justify-center rounded-lg border border-border py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
+                >
+                  Book a call
+                </a>
+                <a
+                  href="#contact"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center justify-center rounded-lg bg-primary py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110"
+                >
+                  Free Quote
+                </a>
+              </div>
             </nav>
           </div>
         )}
