@@ -21,15 +21,15 @@ import {
 import { useState } from "react";
 
 const heroImg =
-  "https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1600&q=80&auto=format";
+  "https://staging.vibe.filesafe.space/1789021417416017000/assets/ba895109-94ab-4a43-9ede-f4908d16309a.jpg";
 const crewImg =
-  "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=1200&q=80&auto=format";
+  "https://staging.vibe.filesafe.space/1789021417416017000/assets/2397c215-6407-45a1-be20-de1762c6d784.jpg";
 const aerialImg =
-  "https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?w=1200&q=80&auto=format";
+  "https://staging.vibe.filesafe.space/1789021417416017000/assets/5eb92b36-eea8-41dd-9024-04ad351736d2.jpg";
 
 const navLinks = [
   { href: "#services", label: "Services" },
-  { href: "#process", label: "Process" },
+  { href: "#process", label: "Processing" },
   { href: "#about", label: "About" },
   { href: "#reviews", label: "Reviews" },
   { href: "#contact", label: "Contact" },
@@ -333,9 +333,7 @@ function LawnSittingLanding() {
                         <span className="mr-2 text-primary">{p.step}</span>
                         {p.title}
                       </h3>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                        {p.desc}
-                      </p>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -466,8 +464,8 @@ function LawnSittingLanding() {
                 Your lawn is one form away from looking incredible
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Fill out the form and we'll respond within 24 hours with a fixed-price quote.
-                No obligations, no contracts, no catch.
+                Fill out the form and we'll respond within 24 hours with a fixed-price quote. No
+                obligations, no contracts, no catch.
               </p>
 
               <div className="mt-10 space-y-5">
